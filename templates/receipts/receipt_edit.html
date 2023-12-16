@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Edit Receipt</h2>
+
+  <!-- Display receipt details -->
+  <p>Store: {{ receipt.store_name }}</p>
+  <p>Date of Purchase: {{ receipt.date_of_purchase }}</p>
+  <p>Items: {{ receipt.item_list }}</p>
+  <p>Total Amount: {{ receipt.total_amount }}</p>
+  
+  <!-- Edit form -->
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save Changes</button>
+  </form>
+  
+  <!-- Link to go back to the receipt detail -->
+  <a href="{% url 'receipt_detail' receipt_id=receipt.id %}">Back to Receipt Detail</a>
+{% endblock %}
