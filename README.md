@@ -3,7 +3,8 @@
 ## Setup and Run Instructions
 
 ### Prerequisites
-- Python 3.x
+
+- Python 3.10
 - Django (install via `pip install django`)
 
 ### Installation
@@ -48,14 +49,23 @@
 User Authentication URLs:
 ---------------------------
 
-User Registration: http://127.0.0.1:8000/Test/signup
-User Login: http://127.0.0.1:8000/Test/login
-User Logout: http://127.0.0.1:8000/Test/logout #this one is handled automatically u dont type it 
+1 - User Registration: http://127.0.0.1:8000/Test/signup
+
+
+2- User Login: http://127.0.0.1:8000/Test/login
+
+
+3 - User Logout: http://127.0.0.1:8000/Test/logout #this one is handled automatically u dont type it 
+
 
 Receipt-related URLs:
 ------------------------
-Receipt List: http://127.0.0.1:8000/Test/receipt_list
-Receipt Detail: http://127.0.0.1:8000/Test/receipt_detail/<receipt_id>/
-Receipt Form: http://127.0.0.1:8000/Test/receipt_form/add/
+4 - Receipt List: http://127.0.0.1:8000/Test/receipt_list
 
-and after deploying the project in render this would be the principal link: (https://receipttrackertesting.onrender.com/) and u can access 
+
+5 - Receipt Detail: http://127.0.0.1:8000/Test/receipt_detail/<receipt_id>/
+
+
+6 - Receipt Form: http://127.0.0.1:8000/Test/receipt_form/add/
+
+
