@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{% if form.instance.id %}Edit Receipt{% else %}Add Receipt{% endif %}</h2>
+  <h6> NB : Date of purchase should be like this : YYYY-MM-DD</h6>
+  <form method="post" action="{% url 'receipt_form' %}">
+    {% csrf_token %}
+
+    <!-- Render other form fields as needed -->
+    {{ form.as_p }}
+
+    <button type="submit">Save</button>
+  </form>
+  <a href="{% url 'receipt_list' %}">Back to Receipt List</a>
+{% endblock %}

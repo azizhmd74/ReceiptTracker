@@ -1,0 +1,15 @@
+<header>
+    <h1>Receipt Tracker</h1>
+
+    <!-- Display a logout form if the user is authenticated -->
+    {% if user.is_authenticated %}
+        <form action="{% url 'custom_logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    {% endif %}
+    </nav>
+</header>
+<!-- Block for content (to be filled in by child templates) -->
+{% block content %}
+{% endblock %}
