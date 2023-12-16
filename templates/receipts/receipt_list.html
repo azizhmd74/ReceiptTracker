@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Receipt List</h2>
+
+  <!-- Unordered list to display receipts -->
+  <ul>
+    {% for receipt in receipts %}
+      <!-- List item with a link to view the details of each receipt -->
+      <li><a href="{% url 'receipt_detail' receipt.id %}">{{ receipt }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <!-- Link to add a new receipt -->
+  <a href="{% url 'receipt_form' %}">Add Receipt</a>
+{% endblock %}
