@@ -58,4 +58,4 @@ Receipt List: http://127.0.0.1:8000/Test/receipt_list
 Receipt Detail: http://127.0.0.1:8000/Test/receipt_detail/<receipt_id>/
 Receipt Form: http://127.0.0.1:8000/Test/receipt_form/add/
 
-and after deploying the project in render
+and after deploying the project in render this would be the principal link: (https://receipttrackertesting.onrender.com/) and u can access 
